@@ -33,6 +33,49 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .contact.section {
+      display: block !important;
+      min-height: 300px;
+      padding-bottom: 40px;
+    }
+    .contact .container {
+      display: block !important;
+    }
+    .portfolio-filters {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      gap: 0.5rem !important;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0;
+    }
+    .portfolio-filters button {
+      min-width: 140px;
+      margin-bottom: 8px;
+      white-space: normal;
+      word-break: break-word;
+      text-align: center;
+      flex: 1 1 45%;
+      max-width: 48%;
+      box-sizing: border-box;
+    }
+    @media (max-width: 575.98px) {
+      .portfolio-filters {
+        justify-content: center !important;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .portfolio-filters button {
+        min-width: 120px;
+        font-size: 13px;
+        padding: 0.5rem 0.5rem;
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -61,7 +104,7 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
         <li><a href="#testimonials"><i class="bi bi-people navicon"></i> Reference</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
@@ -343,7 +386,7 @@
 
       <div class="container">
         <div class="text-center mb-5">
-          <div class="portfolio-filters d-inline-flex gap-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-filters d-inline-flex gap-3 flex-wrap justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <button class="btn btn-outline-primary active" data-filter="*">ALL PROJECTS</button>
             <button class="btn btn-outline-primary" data-filter=".filter-design">UI/UX DESIGN</button>
             <button class="btn btn-outline-primary" data-filter=".filter-web">WEB DEVELOPMENT</button>
